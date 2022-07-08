@@ -7,7 +7,8 @@
         "lint": "clear && eslint --config .eslintrc.js **/*.js --ignore-pattern !.eslintrc.js",
         "release": "standard-version",
         "prettier-check": "prettier --check \"**/*.js\"",
-        "prettier-format": "prettier --write \"**/*.js\""
+        "prettier-format": "prettier --write \"**/*.js\"",
+        "prepare": "husky install"
     },
     "repository": {
         "type": "git",
@@ -30,25 +31,18 @@
     "homepage": "https://github.com/msg-labs/prettier-config#readme",
     "devDependencies": {
         "@msg-labs/eslint-config": "1.1.2",
-        "eslint": "6.7.2",
-        "husky": "3.1.0",
-        "lint-staged": "9.5.0",
-        "prettier": "1.19.1",
-        "standard-version": "7.0.1"
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged"
-        }
+        "eslint": "8.19.0",
+        "husky": "8.0.1",
+        "lint-staged": "10.0.3",
+        "prettier": "2.7.1",
+        "standard-version": "9.5.0"
     },
     "lint-staged": {
         "*.{js,css,json,md}": [
-            "prettier --write",
-            "git add"
+            "prettier --write"
         ],
         "*.js": [
-            "eslint --fix",
-            "git add"
+            "eslint --fix"
         ]
     }
 }
