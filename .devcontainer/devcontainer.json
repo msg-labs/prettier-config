@@ -1,0 +1,16 @@
+{
+    "name": "msg-labs/prettier-config",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "args": { "VARIANT": "16-bullseye" }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode"]
+        }
+    },
+    "remoteUser": "node",
+    "features": {
+        "git": "latest"
+    }
+}
