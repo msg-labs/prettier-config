@@ -8,13 +8,16 @@ module.exports = {
     jsxSingleQuote: false,
     trailingComma: 'none',
     bracketSpacing: true,
-    jsxBracketSameLine: false,
+    bracketSameLine: false,
     arrowParens: 'avoid',
     rangeStart: 0,
     rangeEnd: Infinity,
     requirePragma: false,
     insertPragma: false,
+    proseWrap: 'always',
     htmlWhitespaceSensitivity: 'strict',
     vueIndentScriptAndStyle: true,
-    endOfLine: 'lf'
+    endOfLine: 'lf',
+    embeddedLanguageFormatting: 'off',
+    singleAttributePerLine: true
 };
