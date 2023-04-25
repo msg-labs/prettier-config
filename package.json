@@ -33,7 +33,7 @@
         "@msg-labs/eslint-config": "1.1.2",
         "eslint": "8.19.0",
         "husky": "8.0.1",
-        "lint-staged": "10.0.3",
+        "lint-staged": "13.2.1",
         "prettier": "2.7.1",
         "standard-version": "9.5.0"
     },
